@@ -1,0 +1,66 @@
+{
+"note":"Boccaccio's cities built out as places. Coordinates follow the fourteenth-century town; the tales that touch each locale are listed by id.",
+"cities":{
+"Florence":{"lat":43.771,"lon":11.254,"span":9,"era":"the commune of the 1340s, before and after the plague",
+ "about":"The city the ten young people leave in the spring of 1348. Santa Maria Novella where they meet, the Mercato Vecchio, the Arno and its bridges, the Badia, the road up to Fiesole where the villas are. Most of the Florentine tales are about tradesmen, painters and friars within these walls.",
+ "locales":[
+  {"n":"Santa Maria Novella","k":"church","lat":43.7745,"lon":11.2494,"r":1,"note":"the Dominican church where the seven ladies and three young men meet on a Tuesday morning","tales":["dc001"]},
+  {"n":"The Mercato Vecchio","k":"bazar","lat":43.7714,"lon":11.2540,"r":1,"note":"the old market at the city's heart; Cisti the baker's shop stands near here","tales":["dc052","dc060","dc078"]},
+  {"n":"Ponte Vecchio","k":"river","lat":43.7680,"lon":11.2531,"r":1,"note":"the bridge of shops over the Arno","tales":["dc079","dc083"]},
+  {"n":"The Badia","k":"church","lat":43.7703,"lon":11.2573,"r":1,"note":"the abbey by the Bargello; the physician Simone's friends walk past it at night","tales":["dc079"]},
+  {"n":"Santa Croce","k":"church","lat":43.7686,"lon":11.2621,"r":1,"note":"the Franciscan church on the east side","tales":["dc076"]},
+  {"n":"The Bargello","k":"prison","lat":43.7703,"lon":11.2580,"r":1,"note":"the podesta's palace and its cells","tales":["dc084"]},
+  {"n":"Porta San Gallo","k":"gate","lat":43.7790,"lon":11.2590,"r":1,"note":"the north gate; the road to Bologna and the Mugello","tales":["dc084"]},
+  {"n":"The Fiesole road","k":"garden","lat":43.7960,"lon":11.2830,"r":2,"note":"the hill of villas and gardens where the company keeps its ten days","tales":["dc001","dc011","dc021","dc031","dc041","dc051","dc061","dc071","dc081","dc091"]},
+  {"n":"Calandrino's house","k":"house","lat":43.7730,"lon":11.2490,"r":1,"note":"the painter's street near San Lorenzo; Bruno and Buffalmacco are neighbours","tales":["dc073","dc076","dc083","dc086"]},
+  {"n":"The Arno bank","k":"river","lat":43.7660,"lon":11.2470,"r":1,"note":"the Mugnone runs in here; the heliotrope is hunted in its bed","tales":["dc073"]},
+  {"n":"The hospital of Santa Maria Nuova","k":"hospital","lat":43.7733,"lon":11.2610,"r":1,"note":"the great hospital of the city","tales":["dc079"]}
+ ]},
+"Naples":{"lat":40.852,"lon":14.268,"span":9,"era":"the Angevin capital",
+ "about":"Where Andreuccio of Perugia comes to buy horses and loses everything in a single night: the Malpertugio quarter, the well, the cathedral and the archbishop's tomb.",
+ "locales":[
+  {"n":"Malpertugio","k":"quarter","lat":40.8445,"lon":14.2540,"r":1,"note":"the quarter by the port, named in the tale as a place of ill repute","tales":["dc015"]},
+  {"n":"The port","k":"harbour","lat":40.8400,"lon":14.2560,"r":1,"note":"the ships from Sicily and the Levant","tales":["dc015","dc045"]},
+  {"n":"The cathedral","k":"church","lat":40.8524,"lon":14.2596,"r":1,"note":"where the archbishop lies in his tomb with the ruby ring","tales":["dc015"]},
+  {"n":"The horse market","k":"bazar","lat":40.8470,"lon":14.2520,"r":1,"note":"Andreuccio comes with five hundred florins to buy","tales":["dc015"]},
+  {"n":"Castel dell'Ovo","k":"palace","lat":40.8283,"lon":14.2478,"r":1,"note":"the king's castle on the rock","tales":["dc045","dc100"]}
+ ]},
+"Genoa":{"lat":44.407,"lon":8.934,"span":8,"era":"the merchant republic",
+ "about":"A city of merchants and their wives: Bernabo's house, the port his ship sails from, the tavern where the wager is laid.",
+ "locales":[
+  {"n":"The port","k":"harbour","lat":44.4100,"lon":8.9250,"r":1,"note":"galleys to Alexandria and Acre","tales":["dc019","dc010"]},
+  {"n":"Bernabo's house","k":"house","lat":44.4080,"lon":8.9330,"r":1,"note":"where Zinevra keeps the house while her husband trades","tales":["dc019"]},
+  {"n":"The Ripa","k":"bazar","lat":44.4085,"lon":8.9290,"r":1,"note":"the arcaded quay street of shops","tales":["dc019","dc010"]},
+  {"n":"The tavern","k":"inn","lat":44.4070,"lon":8.9310,"r":1,"note":"where the merchants of Italy lay their wager at Paris, and Genoa hears of it","tales":["dc019"]}
+ ]},
+"Rome":{"lat":41.893,"lon":12.483,"span":10,"era":"the papal city, and the city of the Emperors in the older tales",
+ "about":"Where Abraham the Jew goes to see the court and comes home converted; where Titus and Gisippus play out their friendship.",
+ "locales":[
+  {"n":"The papal court","k":"palace","lat":41.9022,"lon":12.4539,"r":1,"note":"the Lateran and the Vatican; the court Abraham comes to look at","tales":["dc002"]},
+  {"n":"The Tiber bank","k":"river","lat":41.8940,"lon":12.4760,"r":1,"note":"the river and its boats","tales":["dc002","dc098"]},
+  {"n":"The Forum","k":"square","lat":41.8925,"lon":12.4853,"r":1,"note":"the old city's heart, where Titus pleads","tales":["dc098"]},
+  {"n":"The inns of the pilgrims","k":"inn","lat":41.8970,"lon":12.4720,"r":1,"note":"lodging for the stranger from Paris","tales":["dc002"]}
+ ]},
+"Bologna":{"lat":44.494,"lon":11.343,"span":8,"era":"the city of the schools",
+ "about":"The physicians and scholars of Bologna: Master Alberto's love, the scholar's revenge, Gentile de' Carisendi's tomb.",
+ "locales":[
+  {"n":"The schools","k":"hospital","lat":44.4930,"lon":11.3430,"r":1,"note":"the university and its physicians","tales":["dc010","dc074"]},
+  {"n":"The tomb of the Carisendi","k":"cemetery","lat":44.4960,"lon":11.3410,"r":1,"note":"where Gentile finds the lady he loves, buried alive","tales":["dc094"]},
+  {"n":"The piazza","k":"square","lat":44.4938,"lon":11.3426,"r":1,"note":"the great square before San Petronio","tales":["dc010","dc094"]}
+ ]},
+"Pavia":{"lat":45.185,"lon":9.158,"span":8,"era":"the Lombard capital",
+ "about":"King Agilulf's palace, the horsekeeper's ruse, and the house of the nun Sister Isabetta's convent nearby.",
+ "locales":[
+  {"n":"The king's palace","k":"palace","lat":45.1860,"lon":9.1560,"r":1,"note":"where the horsekeeper enters the queen's chamber in the king's cloak","tales":["dc022"]},
+  {"n":"The stables","k":"house","lat":45.1840,"lon":9.1600,"r":1,"note":"the horsekeeper's own quarters","tales":["dc022"]},
+  {"n":"The Ticino bank","k":"river","lat":45.1800,"lon":9.1580,"r":1,"note":"the river below the walls","tales":["dc022","dc043"]}
+ ]},
+"Palermo":{"lat":38.116,"lon":13.362,"span":9,"era":"the Sicilian court",
+ "about":"Where Salabaetto is cheated by Madam Jancofiore, and the king's daughter looks out at Gerbino's galleys.",
+ "locales":[
+  {"n":"The port","k":"harbour","lat":38.1220,"lon":13.3680,"r":1,"note":"the customs house and the galleys","tales":["dc080","dc044"]},
+  {"n":"The customs house","k":"bazar","lat":38.1200,"lon":13.3650,"r":1,"note":"the dogana where merchants leave their goods and pay their dues","tales":["dc080"]},
+  {"n":"Jancofiore's house","k":"house","lat":38.1160,"lon":13.3600,"r":1,"note":"the bath and the bedchamber of the tale","tales":["dc080"]},
+  {"n":"The royal palace","k":"palace","lat":38.1108,"lon":13.3532,"r":1,"note":"the palace of the Normans","tales":["dc044"]}
+ ]}
+}}

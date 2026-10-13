@@ -1,0 +1,193 @@
+{
+ "note": "The compendiums this map carries. Each is public domain, each is cut into tales and laid as hexes by the one engine, and each can be switched on by itself in the filter.",
+ "corpora": [
+  {
+   "id": "nights",
+   "name": "A Thousand Nights and a Night",
+   "short": "The Arabian Nights",
+   "author": "Richard F. Burton, 1885",
+   "source": "https://www.burtoniana.org/",
+   "licence": "public domain",
+   "base": "",
+   "region": "the Islamic world, Morocco to Sumatra",
+   "bounds": [
+    -12,
+    -20,
+    58,
+    112
+   ],
+   "tales": 216,
+   "key": "s",
+   "default": true
+  },
+  {
+   "id": "cherokee",
+   "name": "Myths of the Cherokee",
+   "short": "Cherokee myths",
+   "author": "James Mooney, 1900",
+   "source": "https://www.gutenberg.org/ebooks/45634",
+   "licence": "public domain",
+   "base": "cherokee/",
+   "region": "the southern Appalachians",
+   "bounds": [
+    33,
+    -86,
+    37,
+    -80
+   ],
+   "tales": 105,
+   "key": "ch"
+  },
+  {
+   "id": "zuni",
+   "name": "Zuñi Folk Tales",
+   "short": "Zuñi tales",
+   "author": "Frank Hamilton Cushing, 1901",
+   "source": "https://www.gutenberg.org/ebooks/54682",
+   "licence": "public domain",
+   "base": "zuni/",
+   "region": "the Zuñi country, New Mexico",
+   "bounds": [
+    34,
+    -110,
+    36,
+    -107
+   ],
+   "tales": 34,
+   "key": "zu"
+  },
+  {
+   "id": "hawaii-volcanoes",
+   "name": "Hawaiian Legends of Volcanoes",
+   "short": "Hawaiian volcano legends",
+   "author": "W. D. Westervelt, 1916",
+   "source": "https://www.gutenberg.org/ebooks/66516",
+   "licence": "public domain",
+   "base": "hawaii-volcanoes/",
+   "region": "the island of Hawaii",
+   "bounds": [
+    18.9,
+    -156.1,
+    20.3,
+    -154.8
+   ],
+   "tales": 24,
+   "key": "hv"
+  },
+  {
+   "id": "honolulu",
+   "name": "Legends of Old Honolulu",
+   "short": "Old Honolulu",
+   "author": "W. D. Westervelt, 1915",
+   "source": "https://www.gutenberg.org/ebooks/66547",
+   "licence": "public domain",
+   "base": "honolulu/",
+   "region": "Oahu",
+   "bounds": [
+    21.2,
+    -158.3,
+    21.8,
+    -157.6
+   ],
+   "tales": 23,
+   "key": "ho"
+  },
+  {
+   "id": "decameron",
+   "name": "The Decameron",
+   "short": "The Decameron",
+   "author": "Giovanni Boccaccio, 1353 (Rigg, 1903)",
+   "source": "https://www.gutenberg.org/ebooks/23700",
+   "licence": "public domain",
+   "base": "decameron/",
+   "region": "Florence and the Mediterranean",
+   "bounds": [
+    30,
+    -10,
+    52,
+    40
+   ],
+   "tales": 100,
+   "key": "dc"
+  },
+  {
+   "id": "odyssey",
+   "name": "The Odyssey",
+   "short": "The Odyssey",
+   "author": "Homer, in Samuel Butler's prose, 1900",
+   "source": "https://www.gutenberg.org/ebooks/1727",
+   "licence": "public domain",
+   "base": "odyssey/",
+   "region": "Ithaca, the Aegean and the western sea",
+   "bounds": [
+    30,
+    9,
+    42,
+    36
+   ],
+   "tales": 24,
+   "key": "od"
+  }
+ ],
+ "wanted": [
+  {
+   "name": "Tales and Traditions of the Eskimo",
+   "author": "Henry Rink, 1875",
+   "region": "Greenland and the Arctic",
+   "licence": "public domain"
+  },
+  {
+   "name": "Popular Tales from the Norse",
+   "author": "George Webbe Dasent, 1859",
+   "source": "https://www.gutenberg.org/ebooks/8933",
+   "region": "Norway",
+   "licence": "public domain"
+  },
+  {
+   "name": "The Mabinogion",
+   "author": "Lady Charlotte Guest, 1877",
+   "source": "https://www.gutenberg.org/ebooks/5160",
+   "region": "Wales",
+   "licence": "public domain"
+  },
+  {
+   "name": "Russian Fairy Tales",
+   "author": "W. R. S. Ralston, 1873",
+   "source": "https://www.gutenberg.org/ebooks/22373",
+   "region": "Russia",
+   "licence": "public domain"
+  },
+  {
+   "name": "Kojiki",
+   "author": "Basil Hall Chamberlain, 1882",
+   "source": "https://www.sacred-texts.com/shi/kj/",
+   "region": "Japan",
+   "licence": "public domain"
+  },
+  {
+   "name": "Myths and Legends of the Australian Aborigines",
+   "author": "W. Ramsay Smith, 1930",
+   "source": "https://www.sacred-texts.com/aus/",
+   "region": "Australia",
+   "licence": "public domain"
+  },
+  {
+   "name": "Yoruba Legends",
+   "author": "M. I. Ogumefu, 1929",
+   "source": "https://www.gutenberg.org/ebooks/34655",
+   "region": "West Africa",
+   "licence": "public domain"
+  },
+  {
+   "name": "The Kalevala",
+   "author": "John Martin Crawford, 1888",
+   "source": "https://www.gutenberg.org/ebooks/5186",
+   "region": "Finland",
+   "licence": "public domain"
+  },
+  {
+   "title": "The Ramayana",
+   "note": "Griffith's Gutenberg text (24869) is verse; the map wants a prose telling, so it waits for one in the public domain."
+  }
+ ]
+}

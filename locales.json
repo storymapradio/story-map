@@ -1,0 +1,1644 @@
+{
+ "note": "The cities of the Nights built out as places. Each locale is a spot inside a city where the tales actually go: the bazar, the hammam, the palace, the quay. Coordinates follow the historical city of the ninth to fourteenth centuries; the tales that touch each locale are listed by id. Drawn at the fine grid as its own little world.",
+ "cities": {
+  "Baghdad": {
+   "lat": 33.34,
+   "lon": 44.4,
+   "span": 18,
+   "era": "the Abbasid city, eighth to thirteenth century",
+   "about": "The Round City of al-Mansur on the west bank, its markets pushed south into Karkh; the caliph's palaces across the Tigris in Rusafah and the Khuld; a bridge of boats between. Harun al-Rashid walks these streets in disguise more than any other place in the Nights.",
+   "locales": [
+    {
+     "n": "The Round City",
+     "k": "palace",
+     "lat": 33.345,
+     "lon": 44.372,
+     "r": 2,
+     "note": "al-Mansur's walled circle, the Golden Gate palace and the great mosque at its heart",
+     "tales": [
+      "v10s06",
+      "v2s02",
+      "v2s03",
+      "s24",
+      "v3s04",
+      "s20"
+     ]
+    },
+    {
+     "n": "The Khuld palace",
+     "k": "palace",
+     "lat": 33.352,
+     "lon": 44.392,
+     "r": 1,
+     "note": "the Palace of Eternity on the west bank, where the caliph keeps his nights",
+     "tales": [
+      "v10s06",
+      "v2s02",
+      "v2s03",
+      "s24",
+      "v3s04",
+      "s20"
+     ]
+    },
+    {
+     "n": "Rusafah",
+     "k": "quarter",
+     "lat": 33.352,
+     "lon": 44.412,
+     "r": 2,
+     "note": "the east-bank quarter of the caliph's household and the great families",
+     "tales": [
+      "v10s06",
+      "s28",
+      "s26",
+      "v10s13",
+      "s19",
+      "s31",
+      "v6s09",
+      "v5s04",
+      "v6s49"
+     ]
+    },
+    {
+     "n": "Karkh",
+     "k": "quarter",
+     "lat": 33.318,
+     "lon": 44.38,
+     "r": 2,
+     "note": "the merchants' city south of the walls, home of most of the tales' shopkeepers",
+     "tales": [
+      "v10s06",
+      "s28",
+      "s26",
+      "v10s13",
+      "s19",
+      "s31",
+      "v6s09",
+      "v5s04",
+      "v6s49"
+     ]
+    },
+    {
+     "n": "The bazar of the goldsmiths",
+     "k": "bazar",
+     "lat": 33.322,
+     "lon": 44.386,
+     "r": 1,
+     "note": "the covered market street where a porter is hired and a purse is lost",
+     "tales": [
+      "v10s06",
+      "s28",
+      "s31",
+      "s24",
+      "v4s06",
+      "v10s02"
+     ]
+    },
+    {
+     "n": "The bridge of boats",
+     "k": "bridge",
+     "lat": 33.34,
+     "lon": 44.4,
+     "r": 1,
+     "note": "the pontoon that joins the two halves of the city",
+     "tales": [
+      "v10s06",
+      "s24",
+      "s27",
+      "v10s01",
+      "s19",
+      "v2s02",
+      "v2s03",
+      "v4s08"
+     ]
+    },
+    {
+     "n": "The Tigris quay",
+     "k": "river",
+     "lat": 33.336,
+     "lon": 44.404,
+     "r": 1,
+     "note": "barques, fishermen, and the bodies of the drowned",
+     "tales": [
+      "v10s06",
+      "s24",
+      "s27",
+      "v10s01",
+      "s19",
+      "v2s02",
+      "v2s03",
+      "v4s08"
+     ]
+    },
+    {
+     "n": "The great hammam",
+     "k": "hammam",
+     "lat": 33.326,
+     "lon": 44.39,
+     "r": 1,
+     "note": "where the barber shaves, the bride is washed, and secrets are told",
+     "tales": [
+      "v10s06",
+      "s20",
+      "s26",
+      "v6s09"
+     ]
+    },
+    {
+     "n": "The Basrah Gate",
+     "k": "gate",
+     "lat": 33.322,
+     "lon": 44.372,
+     "r": 1,
+     "note": "the south gate; the road to Bassorah and the Gulf begins here",
+     "tales": [
+      "s24",
+      "s20",
+      "v10s02",
+      "v10s13"
+     ]
+    },
+    {
+     "n": "The Khorasan Gate",
+     "k": "gate",
+     "lat": 33.36,
+     "lon": 44.42,
+     "r": 1,
+     "note": "the north-east gate; the road to Persia and Samarcand",
+     "tales": [
+      "s24",
+      "s20",
+      "v10s02",
+      "v10s13"
+     ]
+    },
+    {
+     "n": "The gardens of the Tigris",
+     "k": "garden",
+     "lat": 33.365,
+     "lon": 44.41,
+     "r": 1,
+     "note": "orchards along the river where lovers meet by night",
+     "tales": [
+      "v10s02",
+      "s20",
+      "v5s04",
+      "v6s09"
+     ]
+    },
+    {
+     "n": "The cemetery",
+     "k": "cemetery",
+     "lat": 33.31,
+     "lon": 44.36,
+     "r": 1,
+     "note": "the tombs west of Karkh, where the grieving keep vigil",
+     "tales": [
+      "s19",
+      "s24",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "The wine-houses",
+     "k": "tavern",
+     "lat": 33.33,
+     "lon": 44.416,
+     "r": 1,
+     "note": "by the Christian quarter on the east bank; Abu Nowas drinks here",
+     "tales": [
+      "v10s06",
+      "v3s04",
+      "v5s01",
+      "s24"
+     ]
+    },
+    {
+     "n": "The Golden Gate mosque",
+     "k": "mosque",
+     "lat": 33.346,
+     "lon": 44.374,
+     "r": 1,
+     "note": "the great mosque at the centre of the Round City, where the Friday prayer is said",
+     "tales": [
+      "s20",
+      "s24",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "Bab al-Taq",
+     "k": "gate",
+     "lat": 33.348,
+     "lon": 44.418,
+     "r": 1,
+     "note": "the gate of the arch on the east bank, the busiest crossing of the city",
+     "tales": [
+      "s24",
+      "s28",
+      "v6s49"
+     ]
+    },
+    {
+     "n": "The Karkh market of the drapers",
+     "k": "bazar",
+     "lat": 33.315,
+     "lon": 44.384,
+     "r": 1,
+     "note": "cloth merchants and their shops; the tailor and the hunchback go by here",
+     "tales": [
+      "s26",
+      "s28",
+      "s31"
+     ]
+    },
+    {
+     "n": "The Mukharrim quarter",
+     "k": "quarter",
+     "lat": 33.343,
+     "lon": 44.425,
+     "r": 1,
+     "note": "the east-bank quarter of the wazirs' houses, Ja'afar's among them",
+     "tales": [
+      "s19",
+      "s20",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "The Sarat canal",
+     "k": "river",
+     "lat": 33.325,
+     "lon": 44.372,
+     "r": 1,
+     "note": "the canal from the Euphrates that waters Karkh and turns its mills",
+     "tales": [
+      "s24",
+      "v4s08"
+     ]
+    },
+    {
+     "n": "The Bab al-Sham cemetery",
+     "k": "cemetery",
+     "lat": 33.36,
+     "lon": 44.36,
+     "r": 1,
+     "note": "the burial ground beyond the Syrian gate, with the tombs of the pious",
+     "tales": [
+      "s19",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "The Khan of the Khorasanis",
+     "k": "khan",
+     "lat": 33.356,
+     "lon": 44.416,
+     "r": 1,
+     "note": "where merchants from the east lodge with their camels and bales",
+     "tales": [
+      "v10s02",
+      "v10s13",
+      "s28"
+     ]
+    },
+    {
+     "n": "The Dar al-Khilafah",
+     "k": "palace",
+     "lat": 33.335,
+     "lon": 44.418,
+     "r": 2,
+     "note": "the later caliphal palaces on the east bank, gardens down to the water",
+     "tales": [
+      "v3s04",
+      "v10s06",
+      "v2s02"
+     ]
+    },
+    {
+     "n": "The public hammam of Karkh",
+     "k": "hammam",
+     "lat": 33.318,
+     "lon": 44.39,
+     "r": 1,
+     "note": "a bath for the tradesmen; the barber's brothers come to grief near here",
+     "tales": [
+      "s26",
+      "s28",
+      "v6s09"
+     ]
+    },
+    {
+     "n": "The slave market",
+     "k": "bazar",
+     "lat": 33.33,
+     "lon": 44.412,
+     "r": 1,
+     "note": "where a slave-girl is bought for ten thousand dinars",
+     "tales": [
+      "v4s06",
+      "v10s13",
+      "v6s49"
+     ]
+    }
+   ],
+   "tales": [
+    "s19",
+    "s20",
+    "s24",
+    "s26",
+    "s27",
+    "s28",
+    "s31",
+    "v10s01",
+    "v10s02",
+    "v10s06",
+    "v10s13",
+    "v2s02",
+    "v2s03",
+    "v3s04",
+    "v4s06",
+    "v4s08",
+    "v5s01",
+    "v5s04",
+    "v6s09",
+    "v6s49"
+   ]
+  },
+  "Bassorah": {
+   "lat": 30.51,
+   "lon": 47.78,
+   "span": 14,
+   "era": "the port of the Gulf, on the great canal",
+   "about": "The city the ships sail from. The Nights send their merchants down the Tigris to Bassorah and out to India and China; Sindbad's every voyage begins at this quay.",
+   "locales": [
+    {
+     "n": "The harbour",
+     "k": "harbour",
+     "lat": 30.5,
+     "lon": 47.815,
+     "r": 2,
+     "note": "the ships to Hind and Sin lie here",
+     "tales": [
+      "v7s08",
+      "v7s10",
+      "s18",
+      "v7s06",
+      "v7s07",
+      "v7s04",
+      "s20",
+      "v4s16",
+      "v7s09"
+     ]
+    },
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 30.512,
+     "lon": 47.785,
+     "r": 1,
+     "note": "the merchants' street; goods bought for the voyage",
+     "tales": [
+      "v9s05",
+      "s18",
+      "s20",
+      "v3s09",
+      "v10s09",
+      "v6s01",
+      "v6s35"
+     ]
+    },
+    {
+     "n": "The wazir's palace",
+     "k": "palace",
+     "lat": 30.52,
+     "lon": 47.775,
+     "r": 1,
+     "note": "where Nur al-Din is bathed and dressed before the king",
+     "tales": [
+      "v3s09",
+      "s18",
+      "s21",
+      "v5s16",
+      "v7s06",
+      "v10s15",
+      "v5s01"
+     ]
+    },
+    {
+     "n": "The hammam",
+     "k": "hammam",
+     "lat": 30.508,
+     "lon": 47.79,
+     "r": 1,
+     "note": "the bath by the market",
+     "tales": [
+      "v3s09",
+      "s21"
+     ]
+    },
+    {
+     "n": "The gardens",
+     "k": "garden",
+     "lat": 30.528,
+     "lon": 47.795,
+     "r": 1,
+     "note": "the garden of the old gardener, outside the wall",
+     "tales": [
+      "s20",
+      "v9s05",
+      "v7s04",
+      "v7s08"
+     ]
+    },
+    {
+     "n": "The city gate",
+     "k": "gate",
+     "lat": 30.495,
+     "lon": 47.77,
+     "r": 1,
+     "note": "the landward gate, where strangers are questioned",
+     "tales": [
+      "s18",
+      "v7s06",
+      "v7s10"
+     ]
+    },
+    {
+     "n": "The canal",
+     "k": "river",
+     "lat": 30.515,
+     "lon": 47.805,
+     "r": 1,
+     "note": "the water that joins the city to the Shatt and the sea",
+     "tales": [
+      "s20",
+      "v7s08"
+     ]
+    },
+    {
+     "n": "The Mirbad",
+     "k": "square",
+     "lat": 30.515,
+     "lon": 47.77,
+     "r": 1,
+     "note": "the open ground at the desert edge where the poets recite and the caravans unload",
+     "tales": [
+      "v3s09",
+      "s18"
+     ]
+    },
+    {
+     "n": "The great mosque",
+     "k": "mosque",
+     "lat": 30.517,
+     "lon": 47.782,
+     "r": 1,
+     "note": "the mosque of the city, where the young man prays before his voyage",
+     "tales": [
+      "s18",
+      "v7s06"
+     ]
+    },
+    {
+     "n": "The Nahr al-Ubulla",
+     "k": "river",
+     "lat": 30.505,
+     "lon": 47.83,
+     "r": 1,
+     "note": "the canal down to Ubulla and the sea, gardens on both banks",
+     "tales": [
+      "v7s08",
+      "v7s10",
+      "v4s16"
+     ]
+    },
+    {
+     "n": "The ship-chandlers",
+     "k": "bazar",
+     "lat": 30.503,
+     "lon": 47.812,
+     "r": 1,
+     "note": "rope, sailcloth and provisions for the voyage to Hind",
+     "tales": [
+      "v7s04",
+      "v7s07",
+      "v7s09"
+     ]
+    },
+    {
+     "n": "The Kadi's house",
+     "k": "house",
+     "lat": 30.514,
+     "lon": 47.788,
+     "r": 1,
+     "note": "where a marriage is written and a case is heard",
+     "tales": [
+      "s21",
+      "v5s16",
+      "v10s15"
+     ]
+    }
+   ],
+   "tales": [
+    "s18",
+    "s20",
+    "s21",
+    "v10s09",
+    "v10s15",
+    "v3s09",
+    "v4s16",
+    "v5s01",
+    "v5s16",
+    "v6s01",
+    "v6s35",
+    "v7s04",
+    "v7s06",
+    "v7s07",
+    "v7s08",
+    "v7s09",
+    "v7s10",
+    "v9s05"
+   ]
+  },
+  "Cairo": {
+   "lat": 30.04,
+   "lon": 31.24,
+   "span": 14,
+   "era": "Fatimid and Mamluk Cairo, tenth to fourteenth century",
+   "about": "Al-Kahirah of the Fatimids with its two palaces and the street between them; Fustat the older town to the south; Bulak the river port. The Nights' Cairo is a city of khans, brokers and the Nile.",
+   "locales": [
+    {
+     "n": "Bayn al-Kasrayn",
+     "k": "palace",
+     "lat": 30.05,
+     "lon": 31.262,
+     "r": 1,
+     "note": "the street between the two palaces, named in the tales themselves",
+     "tales": [
+      "s25",
+      "s23"
+     ]
+    },
+    {
+     "n": "The khan of the merchants",
+     "k": "khan",
+     "lat": 30.048,
+     "lon": 31.26,
+     "r": 1,
+     "note": "where a young merchant lodges with his bales",
+     "tales": [
+      "s23"
+     ]
+    },
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 30.046,
+     "lon": 31.258,
+     "r": 1,
+     "note": "the brokers' market; the Khan al-Khalili stands here later",
+     "tales": [
+      "s23",
+      "v9s19",
+      "v3s11",
+      "v5s17"
+     ]
+    },
+    {
+     "n": "Bulak",
+     "k": "harbour",
+     "lat": 30.062,
+     "lon": 31.23,
+     "r": 1,
+     "note": "the Nile port; boats for Upper Egypt and the sea",
+     "tales": [
+      "s25",
+      "s23",
+      "v7s02"
+     ]
+    },
+    {
+     "n": "Fustat",
+     "k": "quarter",
+     "lat": 30.008,
+     "lon": 31.232,
+     "r": 2,
+     "note": "the old town of Amr, south of the walls",
+     "tales": [
+      "s23",
+      "v5s03",
+      "s21",
+      "s25",
+      "v5s04",
+      "v9s01"
+     ]
+    },
+    {
+     "n": "The Nile bank",
+     "k": "river",
+     "lat": 30.04,
+     "lon": 31.222,
+     "r": 1,
+     "note": "gardens and pleasure-boats along the water",
+     "tales": [
+      "s25",
+      "s23"
+     ]
+    },
+    {
+     "n": "The hammam",
+     "k": "hammam",
+     "lat": 30.044,
+     "lon": 31.256,
+     "r": 1,
+     "note": "the bath on a Monday",
+     "tales": [
+      "s23",
+      "v3s11"
+     ]
+    },
+    {
+     "n": "The gardens of the Khalij",
+     "k": "garden",
+     "lat": 30.056,
+     "lon": 31.244,
+     "r": 1,
+     "note": "orchards along the canal",
+     "tales": [
+      "s25",
+      "s23",
+      "v5s17"
+     ]
+    },
+    {
+     "n": "Bab Zuwaylah",
+     "k": "gate",
+     "lat": 30.042,
+     "lon": 31.257,
+     "r": 1,
+     "note": "the great south gate",
+     "tales": [
+      "s23"
+     ]
+    },
+    {
+     "n": "The wine-houses",
+     "k": "tavern",
+     "lat": 30.052,
+     "lon": 31.248,
+     "r": 1,
+     "note": "a month of breaking fast with a cup of wine",
+     "tales": [
+      "s23",
+      "v9s19",
+      "s25",
+      "v5s17"
+     ]
+    },
+    {
+     "n": "The mosque of al-Azhar",
+     "k": "mosque",
+     "lat": 30.0458,
+     "lon": 31.2628,
+     "r": 1,
+     "note": "the Fatimid mosque and its college",
+     "tales": [
+      "v10s09",
+      "v5s01"
+     ]
+    },
+    {
+     "n": "The Khan al-Khalili",
+     "k": "khan",
+     "lat": 30.0475,
+     "lon": 31.2622,
+     "r": 1,
+     "note": "the merchants' khan north of the two palaces",
+     "tales": [
+      "v10s09",
+      "s21",
+      "v6s01"
+     ]
+    },
+    {
+     "n": "The Citadel",
+     "k": "palace",
+     "lat": 30.0292,
+     "lon": 31.2611,
+     "r": 1,
+     "note": "the sultan's seat on the Mukattam spur",
+     "tales": [
+      "v5s01",
+      "v6s35"
+     ]
+    },
+    {
+     "n": "The Rumaylah square",
+     "k": "square",
+     "lat": 30.032,
+     "lon": 31.256,
+     "r": 1,
+     "note": "the horse market and parade ground below the Citadel",
+     "tales": [
+      "v5s01"
+     ]
+    },
+    {
+     "n": "The Bab al-Nasr cemetery",
+     "k": "cemetery",
+     "lat": 30.056,
+     "lon": 31.266,
+     "r": 1,
+     "note": "the tombs beyond the north gate, where a lover keeps vigil",
+     "tales": [
+      "v6s01",
+      "s21"
+     ]
+    },
+    {
+     "n": "The Rodah island",
+     "k": "garden",
+     "lat": 30.018,
+     "lon": 31.226,
+     "r": 1,
+     "note": "the Nilometer and the gardens in the river",
+     "tales": [
+      "v6s35",
+      "v10s09"
+     ]
+    },
+    {
+     "n": "The Sukkariyah street",
+     "k": "bazar",
+     "lat": 30.043,
+     "lon": 31.259,
+     "r": 1,
+     "note": "the sweet-sellers' street inside Bab Zuwaylah",
+     "tales": [
+      "s21",
+      "v10s09"
+     ]
+    }
+   ],
+   "tales": [
+    "s21",
+    "s23",
+    "s25",
+    "v10s09",
+    "v3s11",
+    "v5s01",
+    "v5s03",
+    "v5s04",
+    "v5s17",
+    "v6s01",
+    "v6s35",
+    "v7s02",
+    "v9s01",
+    "v9s19"
+   ]
+  },
+  "Mosul": {
+   "lat": 36.34,
+   "lon": 43.13,
+   "span": 10,
+   "era": "the city of the upper Tigris",
+   "about": "Where the Christian broker's tale unfolds: the khan of Abu Mansur, the bridge, the house of the damsel.",
+   "locales": [
+    {
+     "n": "The khan of Abu Mansur",
+     "k": "khan",
+     "lat": 36.342,
+     "lon": 43.126,
+     "r": 1,
+     "note": "named in the tale of the porter and the damsel",
+     "tales": [
+      "s13"
+     ]
+    },
+    {
+     "n": "The bridge",
+     "k": "bridge",
+     "lat": 36.336,
+     "lon": 43.14,
+     "r": 1,
+     "note": "the basil of the bridges",
+     "tales": [
+      "s13",
+      "v9s16"
+     ]
+    },
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 36.345,
+     "lon": 43.13,
+     "r": 1,
+     "note": "the fruiterer, the butcher, the confectioner",
+     "tales": [
+      "s13",
+      "s19"
+     ]
+    },
+    {
+     "n": "The great mosque",
+     "k": "mosque",
+     "lat": 36.343,
+     "lon": 43.122,
+     "r": 1,
+     "note": "the minaret that leans",
+     "tales": [
+      "s13",
+      "s25"
+     ]
+    },
+    {
+     "n": "The damsel's house",
+     "k": "house",
+     "lat": 36.35,
+     "lon": 43.135,
+     "r": 1,
+     "note": "a fair mansion fronted by a spacious court",
+     "tales": [
+      "v4s06",
+      "s13",
+      "v9s16",
+      "s19",
+      "v9s12"
+     ]
+    },
+    {
+     "n": "The Bab al-Jisr",
+     "k": "gate",
+     "lat": 36.338,
+     "lon": 43.138,
+     "r": 1,
+     "note": "the bridge gate down to the river",
+     "tales": [
+      "s23",
+      "s25"
+     ]
+    },
+    {
+     "n": "The Tigris bank",
+     "k": "river",
+     "lat": 36.335,
+     "lon": 43.145,
+     "r": 1,
+     "note": "the shore below the walls; the boats to Baghdad",
+     "tales": [
+      "s23",
+      "s25"
+     ]
+    },
+    {
+     "n": "The citadel",
+     "k": "palace",
+     "lat": 36.35,
+     "lon": 43.14,
+     "r": 1,
+     "note": "the governor's mound at the north of the town",
+     "tales": [
+      "s23"
+     ]
+    }
+   ],
+   "tales": [
+    "s13",
+    "s19",
+    "s23",
+    "s25",
+    "v4s06",
+    "v9s12",
+    "v9s16"
+   ]
+  },
+  "Damascus": {
+   "lat": 33.51,
+   "lon": 36.29,
+   "span": 12,
+   "era": "the Umayyad city",
+   "about": "The viceroy's house, the great mosque, the hospital where the physician visits, the gardens of the Ghutah outside the walls.",
+   "locales": [
+    {
+     "n": "The great mosque",
+     "k": "mosque",
+     "lat": 33.512,
+     "lon": 36.307,
+     "r": 1,
+     "note": "the Umayyad mosque at the city's heart",
+     "tales": []
+    },
+    {
+     "n": "The viceroy's house",
+     "k": "palace",
+     "lat": 33.514,
+     "lon": 36.3,
+     "r": 1,
+     "note": "the great hall where the sick young man lies",
+     "tales": [
+      "v8s01",
+      "v9s14"
+     ]
+    },
+    {
+     "n": "The maristan",
+     "k": "hospital",
+     "lat": 33.516,
+     "lon": 36.302,
+     "r": 1,
+     "note": "the hospital of Nur al-Din",
+     "tales": [
+      "s25"
+     ]
+    },
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 33.51,
+     "lon": 36.302,
+     "r": 1,
+     "note": "the jewelled necklace and the broker",
+     "tales": [
+      "s25"
+     ]
+    },
+    {
+     "n": "The Ghutah",
+     "k": "garden",
+     "lat": 33.49,
+     "lon": 36.33,
+     "r": 2,
+     "note": "the orchards that ring the city",
+     "tales": []
+    },
+    {
+     "n": "The prison",
+     "k": "prison",
+     "lat": 33.508,
+     "lon": 36.296,
+     "r": 1,
+     "note": "the citadel's dungeon",
+     "tales": [
+      "v7s23",
+      "v8s01"
+     ]
+    },
+    {
+     "n": "The Bab al-Jabiyah",
+     "k": "gate",
+     "lat": 33.509,
+     "lon": 36.29,
+     "r": 1,
+     "note": "the west gate, the road to Jerusalem and Cairo",
+     "tales": [
+      "v10s06",
+      "s21",
+      "s25"
+     ]
+    },
+    {
+     "n": "The Bab Tuma",
+     "k": "gate",
+     "lat": 33.516,
+     "lon": 36.316,
+     "r": 1,
+     "note": "the east gate, the road to Palmyra and Baghdad",
+     "tales": [
+      "s25",
+      "s21"
+     ]
+    },
+    {
+     "n": "The Straight Street",
+     "k": "square",
+     "lat": 33.511,
+     "lon": 36.305,
+     "r": 1,
+     "note": "the long street of shops from gate to gate",
+     "tales": [
+      "s25",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "The Barada bank",
+     "k": "river",
+     "lat": 33.518,
+     "lon": 36.29,
+     "r": 1,
+     "note": "the river that makes the orchards, with mills along it",
+     "tales": [
+      "s25",
+      "v10s06"
+     ]
+    },
+    {
+     "n": "The Umayyad khan",
+     "k": "khan",
+     "lat": 33.512,
+     "lon": 36.3,
+     "r": 1,
+     "note": "the caravanserai by the mosque where the Cairo merchants lodge",
+     "tales": [
+      "s21",
+      "s25"
+     ]
+    },
+    {
+     "n": "The hammam of Nur al-Din",
+     "k": "hammam",
+     "lat": 33.513,
+     "lon": 36.303,
+     "r": 1,
+     "note": "the bath by the maristan",
+     "tales": [
+      "s25",
+      "v10s06"
+     ]
+    }
+   ],
+   "tales": [
+    "s21",
+    "s25",
+    "v10s06",
+    "v7s23",
+    "v8s01",
+    "v9s14"
+   ]
+  },
+  "Samarcand": {
+   "lat": 39.65,
+   "lon": 66.96,
+   "span": 10,
+   "era": "the city Shah Zaman rules",
+   "about": "The palace where the younger brother finds his wife, and the garden where the tale begins.",
+   "locales": [
+    {
+     "n": "The king's palace",
+     "k": "palace",
+     "lat": 39.655,
+     "lon": 66.975,
+     "r": 1,
+     "note": "Shah Zaman's seat; he returns at midnight for a forgotten gift",
+     "tales": [
+      "s01"
+     ]
+    },
+    {
+     "n": "The garden",
+     "k": "garden",
+     "lat": 39.662,
+     "lon": 66.985,
+     "r": 1,
+     "note": "the pleasure garden under the palace",
+     "tales": [
+      "s01"
+     ]
+    },
+    {
+     "n": "The Registan",
+     "k": "bazar",
+     "lat": 39.655,
+     "lon": 66.975,
+     "r": 1,
+     "note": "the market square",
+     "tales": []
+    },
+    {
+     "n": "The Bibi-Khanym bazar",
+     "k": "bazar",
+     "lat": 39.66,
+     "lon": 66.98,
+     "r": 1,
+     "note": "the market by the great mosque",
+     "tales": [
+      "s01"
+     ]
+    },
+    {
+     "n": "The Zerafshan orchards",
+     "k": "garden",
+     "lat": 39.67,
+     "lon": 66.95,
+     "r": 2,
+     "note": "the fruit gardens along the river outside the walls",
+     "tales": [
+      "s01"
+     ]
+    },
+    {
+     "n": "The citadel",
+     "k": "palace",
+     "lat": 39.65,
+     "lon": 66.955,
+     "r": 1,
+     "note": "the Ark on the western hill",
+     "tales": [
+      "s01"
+     ]
+    }
+   ],
+   "tales": [
+    "s01"
+   ]
+  },
+  "Ispahan": {
+   "lat": 32.65,
+   "lon": 51.67,
+   "span": 10,
+   "era": "the Persian capital",
+   "about": "The city gate the wazir rides to, the palace, the river-bank where the king sits.",
+   "locales": [
+    {
+     "n": "The palace",
+     "k": "palace",
+     "lat": 32.657,
+     "lon": 51.677,
+     "r": 1,
+     "note": "where the wazir is received",
+     "tales": [
+      "v2s04"
+     ]
+    },
+    {
+     "n": "The Zayandeh bank",
+     "k": "river",
+     "lat": 32.64,
+     "lon": 51.67,
+     "r": 1,
+     "note": "the king sits by the river and summons his men",
+     "tales": [
+      "v2s04"
+     ]
+    },
+    {
+     "n": "The city gate",
+     "k": "gate",
+     "lat": 32.668,
+     "lon": 51.66,
+     "r": 1,
+     "note": "the gate the rider enters by",
+     "tales": [
+      "v2s04"
+     ]
+    },
+    {
+     "n": "The Friday mosque",
+     "k": "mosque",
+     "lat": 32.67,
+     "lon": 51.685,
+     "r": 1,
+     "note": "the old great mosque at the city's heart",
+     "tales": []
+    },
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 32.665,
+     "lon": 51.68,
+     "r": 1,
+     "note": "the covered market from the mosque to the square",
+     "tales": []
+    },
+    {
+     "n": "The Zayandeh bridges",
+     "k": "bridge",
+     "lat": 32.643,
+     "lon": 51.677,
+     "r": 1,
+     "note": "the bridges over the river",
+     "tales": []
+    }
+   ],
+   "tales": [
+    "v2s04"
+   ]
+  },
+  "Meccah": {
+   "lat": 21.42,
+   "lon": 39.83,
+   "span": 8,
+   "era": "the holy city",
+   "about": "The Kaabah and the pilgrims' road; the tales come here on the hajj.",
+   "locales": [
+    {
+     "n": "The Haram",
+     "k": "mosque",
+     "lat": 21.423,
+     "lon": 39.826,
+     "r": 1,
+     "note": "the sanctuary and the Kaabah",
+     "tales": [
+      "v7s28"
+     ]
+    },
+    {
+     "n": "The pilgrims' road",
+     "k": "gate",
+     "lat": 21.44,
+     "lon": 39.8,
+     "r": 1,
+     "note": "the way in from Medinah and the north",
+     "tales": []
+    },
+    {
+     "n": "The Safa and Marwah",
+     "k": "square",
+     "lat": 21.4225,
+     "lon": 39.828,
+     "r": 1,
+     "note": "the course between the two hills that the pilgrims walk",
+     "tales": [
+      "v3s07"
+     ]
+    },
+    {
+     "n": "The Zamzam well",
+     "k": "river",
+     "lat": 21.4227,
+     "lon": 39.8262,
+     "r": 1,
+     "note": "the well beside the Kaabah, whose water travels in flasks",
+     "tales": [
+      "s24",
+      "v3s07"
+     ]
+    },
+    {
+     "n": "The pilgrims' khans",
+     "k": "khan",
+     "lat": 21.426,
+     "lon": 39.822,
+     "r": 1,
+     "note": "lodging for the caravans from Syria and Irak",
+     "tales": [
+      "v3s07",
+      "v4s16"
+     ]
+    }
+   ],
+   "tales": [
+    "s24",
+    "v3s07",
+    "v4s16",
+    "v7s28"
+   ]
+  },
+  "Jerusalem": {
+   "lat": 31.78,
+   "lon": 35.22,
+   "span": 8,
+   "era": "the holy city",
+   "about": "The road from Damascus to Cairo passes through; the tales lodge and pray here.",
+   "locales": [
+    {
+     "n": "The Haram al-Sharif",
+     "k": "mosque",
+     "lat": 31.778,
+     "lon": 35.235,
+     "r": 1,
+     "note": "the sanctuary",
+     "tales": []
+    },
+    {
+     "n": "The khan",
+     "k": "khan",
+     "lat": 31.78,
+     "lon": 35.228,
+     "r": 1,
+     "note": "where the travelling merchant sleeps",
+     "tales": [
+      "s21"
+     ]
+    },
+    {
+     "n": "The Church of the Sepulchre",
+     "k": "church",
+     "lat": 31.7785,
+     "lon": 35.2298,
+     "r": 1,
+     "note": "the church the Christians of the tales visit",
+     "tales": [
+      "s23"
+     ]
+    },
+    {
+     "n": "The Damascus Gate",
+     "k": "gate",
+     "lat": 31.7815,
+     "lon": 35.2303,
+     "r": 1,
+     "note": "the north gate, the road to Damascus",
+     "tales": [
+      "s23",
+      "s21"
+     ]
+    },
+    {
+     "n": "The market of the Cotton Merchants",
+     "k": "bazar",
+     "lat": 31.778,
+     "lon": 35.232,
+     "r": 1,
+     "note": "the covered suk that runs to the Haram",
+     "tales": [
+      "s23"
+     ]
+    }
+   ],
+   "tales": [
+    "s21",
+    "s23"
+   ]
+  },
+  "Kufah": {
+   "lat": 32.03,
+   "lon": 44.4,
+   "span": 8,
+   "era": "the garrison city",
+   "about": "Al-Hajjaj's seat; the mosque and the governor's house.",
+   "locales": [
+    {
+     "n": "The great mosque",
+     "k": "mosque",
+     "lat": 32.03,
+     "lon": 44.402,
+     "r": 1,
+     "note": "the mosque of Kufah",
+     "tales": []
+    },
+    {
+     "n": "The governor's house",
+     "k": "palace",
+     "lat": 32.028,
+     "lon": 44.398,
+     "r": 1,
+     "note": "the Dar al-Imarah beside the mosque",
+     "tales": [
+      "v3s10"
+     ]
+    },
+    {
+     "n": "The bazar of the Kunasah",
+     "k": "bazar",
+     "lat": 32.028,
+     "lon": 44.395,
+     "r": 1,
+     "note": "the open market at the edge of town",
+     "tales": [
+      "v4s04"
+     ]
+    },
+    {
+     "n": "The Euphrates bank",
+     "k": "river",
+     "lat": 32.035,
+     "lon": 44.41,
+     "r": 1,
+     "note": "the river landing east of the town",
+     "tales": [
+      "v4s04"
+     ]
+    }
+   ],
+   "tales": [
+    "v3s10",
+    "v4s04"
+   ]
+  },
+  "Bokhara": {
+   "lat": 39.77,
+   "lon": 64.42,
+   "span": 8,
+   "era": "the city of the water-carrier",
+   "about": "A house, a bazar, and a water-carrier's round.",
+   "locales": [
+    {
+     "n": "The bazar",
+     "k": "bazar",
+     "lat": 39.775,
+     "lon": 64.418,
+     "r": 1,
+     "note": "the market the husband comes home from",
+     "tales": [
+      "v6s25"
+     ]
+    },
+    {
+     "n": "The house",
+     "k": "house",
+     "lat": 39.77,
+     "lon": 64.425,
+     "r": 1,
+     "note": "the water-carrier's house",
+     "tales": [
+      "v6s25"
+     ]
+    },
+    {
+     "n": "The Ark",
+     "k": "palace",
+     "lat": 39.777,
+     "lon": 64.41,
+     "r": 1,
+     "note": "the citadel of the amirs",
+     "tales": []
+    },
+    {
+     "n": "The Registan",
+     "k": "square",
+     "lat": 39.776,
+     "lon": 64.413,
+     "r": 1,
+     "note": "the square before the Ark",
+     "tales": []
+    }
+   ],
+   "tales": [
+    "v6s25"
+   ]
+  },
+  "Constantinople": {
+   "lat": 41.01,
+   "lon": 28.98,
+   "span": 10,
+   "era": "the city of the Kings of Roum",
+   "about": "King Omar's war comes to its walls; the palace and the tombs with Ionian characters.",
+   "locales": [
+    {
+     "n": "The palace",
+     "k": "palace",
+     "lat": 41.006,
+     "lon": 28.977,
+     "r": 1,
+     "note": "the seat of the King of Roum",
+     "tales": [
+      "v2s02",
+      "v2s03"
+     ]
+    },
+    {
+     "n": "The walls",
+     "k": "wall",
+     "lat": 41.02,
+     "lon": 28.93,
+     "r": 2,
+     "note": "the land walls the army camps before",
+     "tales": []
+    },
+    {
+     "n": "The Great Church",
+     "k": "church",
+     "lat": 41.0086,
+     "lon": 28.98,
+     "r": 1,
+     "note": "Hagia Sophia, the church of the Kings of Roum",
+     "tales": [
+      "v2s02",
+      "v2s03"
+     ]
+    },
+    {
+     "n": "The Golden Horn",
+     "k": "harbour",
+     "lat": 41.02,
+     "lon": 28.97,
+     "r": 1,
+     "note": "the harbour behind the chain",
+     "tales": [
+      "v2s02",
+      "v2s03"
+     ]
+    },
+    {
+     "n": "The Golden Gate",
+     "k": "gate",
+     "lat": 40.99,
+     "lon": 28.92,
+     "r": 1,
+     "note": "the ceremonial gate in the land walls",
+     "tales": [
+      "v2s02"
+     ]
+    },
+    {
+     "n": "The Hippodrome",
+     "k": "square",
+     "lat": 41.006,
+     "lon": 28.975,
+     "r": 1,
+     "note": "the great square below the palace",
+     "tales": [
+      "v2s03"
+     ]
+    }
+   ],
+   "tales": [
+    "v2s02",
+    "v2s03"
+   ]
+  },
+  "Alexandria": {
+   "lat": 31.2,
+   "lon": 29.92,
+   "span": 8,
+   "era": "the port of Egypt",
+   "about": "Ships for Roum and the West leave from here.",
+   "locales": [
+    {
+     "n": "The harbour",
+     "k": "harbour",
+     "lat": 31.206,
+     "lon": 29.895,
+     "r": 1,
+     "note": "the western port",
+     "tales": []
+    },
+    {
+     "n": "The Pharos",
+     "k": "palace",
+     "lat": 31.214,
+     "lon": 29.885,
+     "r": 1,
+     "note": "the lighthouse on its island",
+     "tales": []
+    },
+    {
+     "n": "The Canopic street",
+     "k": "square",
+     "lat": 31.2,
+     "lon": 29.91,
+     "r": 1,
+     "note": "the long street of the old city",
+     "tales": []
+    },
+    {
+     "n": "The Attarin market",
+     "k": "bazar",
+     "lat": 31.196,
+     "lon": 29.9,
+     "r": 1,
+     "note": "the perfumers' market",
+     "tales": []
+    }
+   ],
+   "tales": []
+  },
+  "Aleppo": {
+   "lat": 36.2,
+   "lon": 37.16,
+   "span": 8,
+   "era": "the northern city",
+   "about": "A khan on the road north, a palace, wine.",
+   "locales": [
+    {
+     "n": "The citadel",
+     "k": "palace",
+     "lat": 36.199,
+     "lon": 37.163,
+     "r": 1,
+     "note": "the great mound at the city's heart",
+     "tales": []
+    },
+    {
+     "n": "The khan",
+     "k": "khan",
+     "lat": 36.202,
+     "lon": 37.155,
+     "r": 1,
+     "note": "the caravanserai by the bazar",
+     "tales": []
+    },
+    {
+     "n": "The great mosque",
+     "k": "mosque",
+     "lat": 36.2,
+     "lon": 37.155,
+     "r": 1,
+     "note": "the Umayyad mosque with its square minaret",
+     "tales": []
+    },
+    {
+     "n": "The Bab Antakiyah",
+     "k": "gate",
+     "lat": 36.2,
+     "lon": 37.15,
+     "r": 1,
+     "note": "the west gate, the road to Antioch and the sea",
+     "tales": []
+    },
+    {
+     "n": "The Quwayq bank",
+     "k": "river",
+     "lat": 36.205,
+     "lon": 37.14,
+     "r": 1,
+     "note": "the small river and its gardens",
+     "tales": []
+    }
+   ],
+   "tales": []
+  }
+ }
+}
