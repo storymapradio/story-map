@@ -685,6 +685,33 @@ body.localmap-on .legend{opacity:0;pointer-events:none;transition:opacity .3s}
       #indexGrip{display:none}
     }
 
+    /* ═══ the dock: a touched place waits in the bottom right corner, and opens out of it to fill the screen ═══ */
+    :root{--sab:env(safe-area-inset-bottom, 0px)}
+    #dock{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom, 0px));width:clamp(84px,24vw,108px);aspect-ratio:1;z-index:100060;
+      border-radius:18px;background:var(--panel-bg);border:1.5px solid var(--hi-stroke, var(--panel-border));cursor:grab;touch-action:none;
+      box-shadow:0 0 0 4px color-mix(in srgb, var(--hi, #e96) 22%, transparent), 0 14px 34px rgba(0,0,0,.32);user-select:none;-webkit-user-select:none}
+    #dock[hidden]{display:none}
+    #dock canvas{position:absolute;inset:6px 6px 18px;width:calc(100% - 12px);height:calc(100% - 24px);display:block;pointer-events:none}
+    #dock .dock-name{position:absolute;left:6px;right:6px;bottom:4px;font:italic 600 10.5px/1.1 Georgia,serif;color:var(--text);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+    #dock .dock-x{position:absolute;top:-9px;left:-9px;width:24px;height:24px;border-radius:50%;border:1px solid var(--panel-border);background:var(--panel-bg);color:var(--text-muted);font-size:15px;line-height:1;cursor:pointer;padding:0}
+    #dock.land{animation:docklift 1.8s ease-in-out .7s 2}
+    @keyframes docklift{0%,100%{box-shadow:0 0 0 4px color-mix(in srgb, var(--hi, #e96) 22%, transparent), 0 14px 34px rgba(0,0,0,.32)}50%{box-shadow:0 0 0 9px color-mix(in srgb, var(--hi, #e96) 30%, transparent), 0 18px 40px rgba(0,0,0,.36)}}
+    .panel-hero,.panel-fold{display:none}
+    body.dockmode #panel.docked{position:fixed!important;inset:0!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:auto!important;height:auto!important;
+      transform:none!important;border:none!important;border-radius:0!important;z-index:100050;display:flex!important;flex-direction:column;overflow:hidden;
+      padding:calc(10px + env(safe-area-inset-top, 0px)) 18px calc(18px + env(safe-area-inset-bottom, 0px));box-shadow:none;background:var(--panel-bg);will-change:clip-path}
+    body.dockmode #panel.docked .sheet-grip{display:none}
+    body.dockmode #panel.docked .panel-close{display:none}
+    body.dockmode #panel.docked .panel-hero{display:block;flex:0 0 auto;height:min(38vh,320px);margin:22px -18px 6px;position:relative;
+      background:radial-gradient(ellipse at 50% 70%, color-mix(in srgb, var(--hi, #e96) 14%, transparent), transparent 62%)}
+    body.dockmode #panel.docked .panel-hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+    body.dockmode #panel.docked #PC{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+    body.dockmode #panel.docked .panel-fold{display:grid;place-items:center;position:absolute;top:calc(6px + env(safe-area-inset-top, 0px));left:6px;width:52px;height:52px;border-radius:14px;border:none;
+      background:none;color:var(--text);cursor:grab;touch-action:none;z-index:2}
+    body.dockmode #panel.docked .panel-fold svg{width:26px;height:26px}
+    body.dockmode #panel.docked .panel-fold::after{content:'';position:absolute;inset:8px;border-radius:12px;border:1.5px solid var(--panel-border);opacity:.8}
+    body.dockmode #panel.docked > *{opacity:calc(var(--dockp, 1) * 1.4 - .2)}
+
     /* ═══ the tale cards, tight, and the same wherever they are listed ═══ */
     .story-list{gap:7px}
     .sc{padding:10px 12px;border-radius:10px}
@@ -2915,7 +2942,9 @@ function openPanel(key){
   indexPanel.classList.remove('open');
   indexBtn.classList.remove('active-btn');
   indexOpen=false;
-  panel.classList.add('open');
+  const hs=gs(geo.lon,geo.lat);
+  if(!(openPanel.reopen&&window.__dock&&window.__dock.p()>0)&&window.__dock&&window.__dock.arrive({ model:null, name:entry.count+' tale'+(entry.count>1?'s':''), from:[hs.sx,hs.sy], size:R_KM*sc*2 })){}
+  else panel.classList.add('open');
 
   // Story card click → highlight route
   PC.querySelectorAll('.sc').forEach(el=>{
@@ -2924,7 +2953,7 @@ function openPanel(key){
       const sid=this.dataset.sid;
       activeStoryId=activeStoryId===sid?null:sid;
       // Re-render panel to update active state
-      openPanel(key);
+      openPanel.reopen=true; openPanel(key); openPanel.reopen=false;
       draw();
     });
   });
@@ -8117,8 +8146,9 @@ function openModelPanel(p,part){
   if(!ids.length) html+='<div class="meta" style="margin-top:10px">No tale stops here yet. It stands on the map because the stories pass this way.</div>';
   PC.innerHTML=html; wireReadButtons(PC);
   indexPanel.classList.remove('open'); indexBtn.classList.remove('active-btn'); indexOpen=false;
-  panel.classList.add('open');
-  PC.querySelectorAll('.sc').forEach(el=>{ el.addEventListener('click',function(ev){ if(ev.target.tagName==='A'||ev.target.tagName==='BUTTON') return; const sid=this.dataset.sid; activeStoryId=activeStoryId===sid?null:sid; openModelPanel(p,part); draw(); }); });
+  if(!(openModelPanel.reopen&&window.__dock&&window.__dock.p()>0)&&window.__dock&&window.__dock.arrive({ model:m, name:title, from:p.last&&p.last.box?[(p.last.box[0]+p.last.box[2])/2,(p.last.box[1]+p.last.box[3])/2]:null, size:p.last&&p.last.box?Math.max(p.last.box[2]-p.last.box[0],p.last.box[3]-p.last.box[1]):0 })){}
+  else panel.classList.add('open');
+  PC.querySelectorAll('.sc').forEach(el=>{ el.addEventListener('click',function(ev){ if(ev.target.tagName==='A'||ev.target.tagName==='BUTTON') return; const sid=this.dataset.sid; activeStoryId=activeStoryId===sid?null:sid; openModelPanel.reopen=true; openModelPanel(p,part); openModelPanel.reopen=false; draw(); }); });
   PC.querySelectorAll('.iso-chips .pill').forEach(b=>{ b.onclick=()=>{ flyTo(+b.dataset.lat,+b.dataset.lon,Math.max(sc,Math.min(VW(),VH())/((+b.dataset.r||1)*3.2)),900); }; });
   draw();
 }
@@ -8127,6 +8157,105 @@ function placeModel(name,cityName){ const p=PLACED.find(x=>x.name===name&&(!city
 window.NIGHTS_ISO={ placed:()=>PLACED, visible:()=>visible, plans:()=>PLANS, kinds:()=>Object.keys(ISO.KINDS), rebuild:()=>{ builtN=-1; draw(); }, place:placeModel, nearest:(lat,lon,km,tiers)=>{ const k=gk(lon,lat); let best=null,bd=km||60; for(const p of PLACED){ if(tiers&&tiers.indexOf(p.tier)<0) continue; const d=kmd(k,p); if(d<bd){ bd=d; best=p; } } return best; },
   open:(name)=>{ const p=PLACED.find(x=>x.name===name); if(p) openModelPanel(p,-1); }, sprites:()=>SPR.size, country:p=>p?envPlan(p):null };
 })();
+
+/* ═══════════════════ THE DOCK: a place you touch moves into the corner, and opens from there ═══════════════════
+   On a phone (or any touch screen) a touched place no longer pulls up a sheet. The model you touched lifts off
+   the map and flies into the bottom right corner, where it waits. Tap it, or drag it up or up and to the left, and
+   the place opens out of that corner until it fills the screen: the model large at the top, its tales below.
+   To put it back, press and hold the top left corner, or drag it down and to the right, and the screen folds back
+   into the corner. The corner's x closes the place. The open amount is one number, p: 0 in the corner, 1 full. */
+(function(){
+  const MQ=window.matchMedia('(max-width:900px), (pointer:coarse)');
+  const on=()=>MQ.matches;
+  const panelEl=document.getElementById('panel'), PCe=document.getElementById('PC');
+  const dock=document.createElement('div'); dock.id='dock'; dock.setAttribute('role','button'); dock.setAttribute('tabindex','0'); dock.setAttribute('aria-label','Open this place');
+  dock.innerHTML='<canvas></canvas><span class="dock-name"></span><button class="dock-x" type="button" aria-label="Close this place">&times;</button>';
+  document.body.appendChild(dock);
+  const hero=document.createElement('div'); hero.className='panel-hero'; hero.innerHTML='<canvas></canvas>';
+  const fold=document.createElement('button'); fold.className='panel-fold'; fold.type='button'; fold.setAttribute('aria-label','Fold back into the corner');
+  fold.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 L17 17 M17 9 V17 H9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  panelEl.insertBefore(hero, PCe); panelEl.appendChild(fold);
+  const D=()=>Math.round(Math.min(108, Math.max(84, innerWidth*.24))), M=14;
+  let cur={ model:null, name:'' }, P=0, anim=0, shown=false, home=null;
+  const safeB=()=>{ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sab'))||0; return v; };
+  /* a model drawn to fit a canvas, in the map's ink */
+  function paint(cvs, m, pad){
+    const r=cvs.getBoundingClientRect(), dpr=Math.min(2, devicePixelRatio||1), W=Math.max(10,r.width), H=Math.max(10,r.height);
+    cvs.width=Math.round(W*dpr); cvs.height=Math.round(H*dpr);
+    const g=cvs.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,W,H);
+    if(!m){ return; }
+    const b=ISO.bbox(m,1,2,'round'), S=Math.min((W-pad*2)/(b[2]-b[0]), (H-pad*2)/(b[3]-b[1]));
+    const cam=ISO.Cam(45,.5,S), b2=ISO.bbox(m,S,2,'round'); cam.ox=W/2-(b2[0]+b2[2])/2; cam.oy=H/2-(b2[1]+b2[3])/2;
+    ISO.draw(g,m,cam,inkPal(),{ lw:S<.4?.8:1, maxLod:S<.25?0:S<.6?1:2, now:0, plinth:'round', halo:true });
+  }
+  function hexGlyph(cvs){
+    const r=cvs.getBoundingClientRect(), dpr=Math.min(2, devicePixelRatio||1), W=r.width, H=r.height; cvs.width=W*dpr; cvs.height=H*dpr;
+    const g=cvs.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,W,H);
+    const css=getComputedStyle(document.documentElement), ink=(css.getPropertyValue('--hi-stroke')||'#a33').trim(), fill=(css.getPropertyValue('--hi')||'#e96').trim();
+    g.beginPath(); for(let i=0;i<6;i++){ const a=Math.PI/3*i, x=W/2+W*.32*Math.cos(a), y=H/2+H*.32*Math.sin(a)*.62; i?g.lineTo(x,y):g.moveTo(x,y); } g.closePath(); g.fillStyle=fill; g.globalAlpha=.6; g.fill(); g.globalAlpha=1; g.strokeStyle=ink; g.lineWidth=1.6; g.stroke();
+  }
+  /* the open amount as a window opening out of the corner */
+  function set(p){
+    P=Math.max(0,Math.min(1,p));
+    const W=innerWidth, H=innerHeight, d=D(), b=M+safeB(), q=1-P, e=P*P*(3-2*P);
+    const top=q*(H-b-d), left=q*(W-M-d), right=q*M, bottom=q*b, rad=18*q+(1-q)*0;
+    panelEl.style.clipPath='inset('+top.toFixed(1)+'px '+right.toFixed(1)+'px '+bottom.toFixed(1)+'px '+left.toFixed(1)+'px round '+rad.toFixed(1)+'px)';
+    panelEl.style.setProperty('--dockp', P.toFixed(3));
+    dock.style.opacity=String(Math.max(0, 1-P*3.2)); dock.style.pointerEvents=P<.05?'auto':'none';
+    panelEl.classList.toggle('dock-full', P>.98);
+  }
+  function go(to, ms){
+    cancelAnimationFrame(anim); const from=P, t0=performance.now(), dur=ms||420;
+    if(to>0 && !panelEl.classList.contains('docked')) panelEl.classList.add('docked');
+    const step=now=>{ const k=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-k,3); set(from+(to-from)*e); if(k<1) anim=requestAnimationFrame(step); };
+    anim=requestAnimationFrame(step);
+  }
+  /* a place arrives: the model flies from where it stood into the corner */
+  function arrive(o){
+    if(!on()) return false;
+    cur={ model:o.model||null, name:o.name||'' }; shown=true;
+    /* the stage holds its own layers, so a place that is to fill the screen steps out of it to the top of the page */
+    if(panelEl.parentNode!==document.body){ home={ parent:panelEl.parentNode, next:panelEl.nextSibling }; document.body.appendChild(panelEl); }
+    document.body.classList.add('dockmode'); panelEl.classList.add('open','docked');
+    dock.querySelector('.dock-name').textContent=cur.name; dock.hidden=false; dock.classList.remove('land'); void dock.offsetWidth;
+    set(0);
+    const cvs=dock.querySelector('canvas'); if(cur.model) paint(cvs,cur.model,8); else hexGlyph(cvs);
+    if(o.from){
+      const d=D(), b=M+safeB(), tx=innerWidth-M-d/2, ty=innerHeight-b-d/2, dx=o.from[0]-tx, dy=o.from[1]-ty, s=Math.max(.35, Math.min(2.2, (o.size||d)/d));
+      dock.style.transition='none'; dock.style.transform='translate('+dx+'px,'+dy+'px) scale('+s+')'; void dock.offsetWidth;
+      dock.style.transition='transform .62s cubic-bezier(.2,.85,.25,1.08), opacity .3s'; dock.style.transform='';
+    }
+    dock.classList.add('land');
+    /* the large model is drawn now, so it is already there as the place opens out of the corner */
+    requestAnimationFrame(()=>{ const hc=hero.querySelector('canvas'); if(cur.model) paint(hc,cur.model,18); else { hc.width=0; hc.height=0; } });
+    return true;
+  }
+  function hide(){
+    if(!shown) return; shown=false; cancelAnimationFrame(anim);
+    dock.hidden=true; panelEl.classList.remove('docked','dock-full'); panelEl.style.clipPath=''; document.body.classList.remove('dockmode');
+    if(home&&home.parent){ home.parent.insertBefore(panelEl, home.next&&home.next.parentNode===home.parent?home.next:null); home=null; }
+    const c=hero.querySelector('canvas'); c.width=0; c.height=0;
+  }
+  /* the corner: tap to open, or drag up or up and to the left and the place follows the hand */
+  let drag=null;
+  dock.addEventListener('pointerdown',e=>{ if(e.target.closest('.dock-x')) return; drag={x:e.clientX,y:e.clientY,p:P,moved:false,t:performance.now()}; dock.setPointerCapture(e.pointerId); cancelAnimationFrame(anim); panelEl.classList.add('docked'); });
+  dock.addEventListener('pointermove',e=>{ if(!drag) return; const dx=drag.x-e.clientX, dy=drag.y-e.clientY, reach=Math.max(dy, (dx+dy)*.72, dx*.8); if(Math.hypot(dx,dy)>6) drag.moved=true; if(drag.moved) set(reach/(Math.min(innerWidth,innerHeight)*.62)); });
+  const dockUp=e=>{ if(!drag) return; const was=drag; drag=null; if(!was.moved){ go(1,460); return; } const v=P/Math.max(60,performance.now()-was.t)*1000; go(P>.22||v>1.6?1:0, 360); };
+  dock.addEventListener('pointerup',dockUp); dock.addEventListener('pointercancel',dockUp);
+  dock.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(1,460); } });
+  dock.querySelector('.dock-x').addEventListener('click',e=>{ e.stopPropagation(); if(typeof closePanel==='function') closePanel(); else panelEl.classList.remove('open'); hide(); });
+  /* the top left corner: hold it, or drag it down and to the right, and the place folds back into the corner */
+  let fd=null, holdT=0;
+  fold.addEventListener('pointerdown',e=>{ fd={x:e.clientX,y:e.clientY,moved:false}; fold.setPointerCapture(e.pointerId); cancelAnimationFrame(anim); clearTimeout(holdT); holdT=setTimeout(()=>{ if(fd&&!fd.moved){ fd=null; go(0,520); } },380); });
+  fold.addEventListener('pointermove',e=>{ if(!fd) return; const dx=e.clientX-fd.x, dy=e.clientY-fd.y; if(Math.hypot(dx,dy)>6){ fd.moved=true; clearTimeout(holdT); } if(fd.moved) set(1-Math.max(dy,(dx+dy)*.72,dx*.8)/(Math.min(innerWidth,innerHeight)*.62)); });
+  const foldUp=()=>{ clearTimeout(holdT); if(!fd) return; const was=fd; fd=null; if(!was.moved){ go(0,520); return; } go(P<.78?0:1, 360); };
+  fold.addEventListener('pointerup',foldUp); fold.addEventListener('pointercancel',foldUp);
+  /* another surface closing the panel closes the corner too */
+  new MutationObserver(()=>{ if(shown&&!panelEl.classList.contains('open')) hide(); }).observe(panelEl,{attributes:true,attributeFilter:['class']});
+  addEventListener('resize',()=>{ if(!shown) return; set(P); if(cur.model) paint(hero.querySelector('canvas'),cur.model,18); paint(dock.querySelector('canvas'),cur.model,8); });
+  window.__dock={ arrive, hide, open:()=>go(1,460), fold:()=>go(0,460), p:()=>P, on };
+})();
+
 
 /* ═══════════════════ THE TOP BAR AND THE READER'S TOOLS ═══════════════════
    The icons between the two corners are the map's tools; when a tale opens they become the
